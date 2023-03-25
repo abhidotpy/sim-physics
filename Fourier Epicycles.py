@@ -16,7 +16,7 @@ F_RANGE = 300               # No. of frequencies used for the plot
 path_x, path_y = [], []     # Store the coordinates of drawn path
 artist = []                 # Drawable artist array
 
-df = pd.read_csv('D:\\Python\\PyCharm Projects\\Design CSV\\Music Note.csv')
+df = pd.read_csv('<filename>')  # Replace filename with a points csv file
 X = np.array(df.iloc[:, 0])     # x coordinates of the figure points
 Y = np.array(df.iloc[:, 1])     # y coordinates of the figure points
 Z = X + Y*1j                    # Recast them as a closed circle in complex plane
@@ -79,6 +79,5 @@ init_artist()
 
 aaaa = FuncAnimation(fig, animate, frames=1000, repeat=False, interval=30, blit=True)
 
-plt.get_current_fig_manager().window.showMaximized()
 plt.show()
 

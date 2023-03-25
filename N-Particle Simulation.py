@@ -153,7 +153,6 @@ init_artist()
 
 aaaa = FuncAnimation(fig, animate, frames=1000, interval=30, blit=True)
 
-plt.get_current_fig_manager().window.showMaximized()
 plt.show()
 
 

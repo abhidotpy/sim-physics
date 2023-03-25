@@ -87,6 +87,5 @@ ising()
 
 aaaa = FuncAnimation(fig, animate, frames=frame_count, interval=30, blit=True)
 
-plt.get_current_fig_manager().window.showMaximized()
 plt.show()
 

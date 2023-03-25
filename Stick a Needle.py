@@ -99,5 +99,4 @@ def click(event):
 
 B.on_clicked(click)
 
-plt.get_current_fig_manager().window.showMaximized()
 plt.show()
